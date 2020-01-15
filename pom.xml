@@ -45,7 +45,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/araws/myPetClinic.git</developerConnection>
-        <tag>mypetclinic-0.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
