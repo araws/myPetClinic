@@ -44,7 +44,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/araws/myPetClinic.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:araws/myPetClinic.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
