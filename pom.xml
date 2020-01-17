@@ -4,7 +4,7 @@
 
     <groupId>pl.antygravity</groupId>
     <artifactId>mypetclinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <modules>
         <module>petClinicData</module>
@@ -53,7 +53,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:araws/myPetClinic.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>mypetclinic-0.0.1</tag>
     </scm>
 
 </project>
