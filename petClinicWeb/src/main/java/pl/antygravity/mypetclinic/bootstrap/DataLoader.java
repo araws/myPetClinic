@@ -3,11 +3,14 @@ package pl.antygravity.mypetclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import pl.antygravity.mypetclinic.model.Owner;
+import pl.antygravity.mypetclinic.model.Pet;
 import pl.antygravity.mypetclinic.model.PetType;
 import pl.antygravity.mypetclinic.model.Vet;
 import pl.antygravity.mypetclinic.services.OwnerService;
 import pl.antygravity.mypetclinic.services.PetTypeService;
 import pl.antygravity.mypetclinic.services.VetService;
+
+import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -36,12 +39,33 @@ public class DataLoader implements CommandLineRunner {
         Owner owner1 = new Owner();
         owner1.setFirstName("Kasia");
         owner1.setLastName("Gan");
+        owner1.setAddress("Kopernika");
+        owner1.setCity("Gliwice");
+        owner1.setTelephone("790790790");
+
+
+        Pet alicja = new Pet();
+        alicja.setPetType(saveCatPetType);
+        alicja.setOwner(owner1);
+        alicja.setBirthDate(LocalDate.of(2007, 3, 21));
+        alicja.setName("Alicja");
+        owner1.getPets().add(alicja);
 
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Andrzej");
         owner2.setLastName("Raw");
+        owner2.setAddress("Kopernika");
+        owner2.setCity("Gliwice");
+        owner2.setTelephone("793793793");
+
+        Pet falka = new Pet();
+        falka.setPetType(saveDogPetType);
+        falka.setOwner(owner2);
+        falka.setBirthDate(LocalDate.of(2012, 6, 3));
+        falka.setName("Falka");
+        owner2.getPets().add(falka);
 
         ownerService.save(owner2);
 
