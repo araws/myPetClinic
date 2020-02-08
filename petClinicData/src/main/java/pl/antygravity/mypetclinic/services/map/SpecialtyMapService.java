@@ -2,12 +2,12 @@ package pl.antygravity.mypetclinic.services.map;
 
 import org.springframework.stereotype.Service;
 import pl.antygravity.mypetclinic.model.Specialty;
-import pl.antygravity.mypetclinic.services.SpecialtiesService;
+import pl.antygravity.mypetclinic.services.SpecialtyService;
 
 import java.util.Set;
 
 @Service
-public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
     @Override
     public Set<Specialty> findAll() {
