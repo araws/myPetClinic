@@ -7,11 +7,11 @@ import pl.antygravity.mypetclinic.services.OwnerService;
 
 @RequestMapping("/owners")
 @Controller
-public class OwnersController {
+public class OwnerController {
 
     private final OwnerService ownerService;
 
-    public OwnersController(OwnerService ownerService) {
+    public OwnerController(OwnerService ownerService) {
         this.ownerService = ownerService;
     }
 
@@ -21,5 +21,11 @@ public class OwnersController {
         model.addAttribute("owners", ownerService.findAll());
 
         return "owners/index";
+    }
+
+    @RequestMapping("/find")
+    public String findOwners() {
+
+        return "notimplemented";
     }
 }
