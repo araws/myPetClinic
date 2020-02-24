@@ -1,5 +1,6 @@
 package pl.antygravity.mypetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import pl.antygravity.mypetclinic.model.Visit;
 import pl.antygravity.mypetclinic.services.VisitService;
@@ -7,6 +8,7 @@ import pl.antygravity.mypetclinic.services.VisitService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override

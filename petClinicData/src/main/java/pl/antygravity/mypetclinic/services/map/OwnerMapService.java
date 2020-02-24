@@ -1,5 +1,6 @@
 package pl.antygravity.mypetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import pl.antygravity.mypetclinic.model.Owner;
 import pl.antygravity.mypetclinic.model.Pet;
@@ -10,6 +11,7 @@ import pl.antygravity.mypetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;
