@@ -1,4 +1,14 @@
 # myPetClinic
 My Version of Pet Clinic
 
-### In progress
+## Built with
+- Java
+- Spring Framework
+- Project Lombok
+- Junit
+
+## Author
+Andrzej Rawski
+
+
+# IN PROGRESS
