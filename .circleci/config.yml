@@ -12,7 +12,7 @@ jobs:
           key: maven-{{ checksum "/tmp/maven_cache_seed" }}
 
       - run: mvn install -DskipTests
-      
+
       - run:
           name: Install Dependencies
           command: mvn dependency:go-offline --settings 'pom.xml'

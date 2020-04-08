@@ -1,6 +1,8 @@
 # myPetClinic
 My Version of Pet Clinic
 
+[![CircleCI](https://circleci.com/gh/araws/myPetClinic.svg?style=svg)](https://circleci.com/gh/araws/myPetClinic)
+
 ## Built with
 - Java
 - Spring Framework
